@@ -2,7 +2,7 @@ import PropTypes  from 'prop-types';
 import defaultImage from './default.jpg'
 
 // ?? оператор в js src={avatar ?? defaultImage}
-export default function Profile(props) {
+ function Profile(props) {
   const {avatar = defaultImage, name, tag, location, stats } = props;
 
     return (
@@ -59,3 +59,5 @@ Profile.defaultProps = {
     likes: '0',
   },
 };
+
+export default Profile;

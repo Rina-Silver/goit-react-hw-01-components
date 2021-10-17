@@ -3,7 +3,7 @@ import Section from './components/Section';
 import Profile from './components/Profile/Profile';
 import user from './user.json';
 
-export default function App() {
+ function App() {
     return (
         <div>
        <Section title="Задание 1" >
@@ -38,3 +38,5 @@ export default function App() {
         //     userView={user.stats.views}
         //     userLike={user.stats.likes}
         //     />)}  
+
+export default App;

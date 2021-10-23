@@ -5,19 +5,16 @@ const color = item => {
   return `${colorArray[Number(item.id.replace(/[^0-9]/g, '')) % 5]}`;
 };
 
-function Statistics({stats}) {
-    return (
+const Statistics =({stats}) =>  (
          <ul className="stat-list">
         {stats.map(stat =>
            (<li className="item"  key={stat.id} style={{ backgroundColor: color(stat) }}>
             <span className="label">{ stat.label}</span>
             <span className="percentage">{ stat.percentage}%</span>
     </li>))}
-       
-   
   </ul>);
     
-}
+
 Statistics.propTypes = {
   
   id: PropTypes.string.isRequired,
@@ -25,5 +22,6 @@ Statistics.propTypes = {
   percentage: PropTypes.number.isRequired,
 };
 
-
 export default Statistics;
+
+

@@ -13,11 +13,16 @@ const FriendList =({friends}) =>  (
     
 
 FriendList.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool,
-  id: PropTypes.string.isRequired,
+   friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
+
 FriendList.defaultProps = {
   avatar: 'https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg',
   name: 'User name',

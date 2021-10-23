@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 Section.propTypes = {
     title: PropTypes.string,
-    children:PropTypes.node,
+    children:PropTypes.node.isRequired,
 }
 
 export default Section;

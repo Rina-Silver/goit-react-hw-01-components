@@ -13,17 +13,17 @@ import transactions from "./components/TransactionHistory/transactions.json";
 function App() {
     return (
         <div className="container">
-            <Section>
+            <Section title="Задание 1">
                 <Profile {...user} />
             </Section>
             <Section className="statistics" title="Upload stats">
                 <Statistics stats={statisticalData} />
             </Section>
-            <Section title="Задание 3">
-                <FriendList friends={friends} />,
+            <Section >
+                <FriendList friends={friends} />
             </Section>
             <Section title="Задание 4">
-                <TransactionHistory items={transactions} />;
+                <TransactionHistory items={transactions} />
             </Section>
         </div>
     );

@@ -12,7 +12,7 @@ import transactions from "components/TransactionHistory/transactions.json";
 
 function App() {
     return (
-        <div className="container" style={{width: 1920, margin:'20px auto'}}>
+        <div className="container" style={{maxWidth: '50vw', margin:'0 auto'}}>
             <Section title="Задание 1">
                 {/* <Profile {...user} /> */}
                 <Profile

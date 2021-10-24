@@ -12,19 +12,19 @@ import transactions from "components/TransactionHistory/transactions.json";
 
 function App() {
     return (
-        <div className="container">
+        <div className="container" style={{width: 1920, margin:'20px auto'}}>
             <Section title="Задание 1">
                 {/* <Profile {...user} /> */}
                 <Profile
-            name={user.name}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}
-            userFollow={user.stats.followers}
-            userView={user.stats.views}
-            userLike={user.stats.likes}
-            />
+                    name={user.name}
+                    tag={user.tag}
+                    location={user.location}
+                    avatar={user.avatar}
+                    stats={user.stats}
+                    userFollow={user.stats.followers}
+                    userView={user.stats.views}
+                    userLike={user.stats.likes}
+                />
             </Section>
             <Section className="statistics" title="Upload stats">
                 <Statistics stats={statisticalData} />

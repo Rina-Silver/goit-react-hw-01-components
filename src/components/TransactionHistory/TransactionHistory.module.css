@@ -1,0 +1,32 @@
+.transactionHistory {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
+  font-size: 12px;
+  border-collapse: collapse;
+  text-align: center;
+  border-bottom: 1px solid var(--main-light-grey);
+  box-shadow: 1px 2px 3px var(--main-shadow-color);
+}
+th {
+  width: 250px;
+  height: 45px;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  font-weight: 600;
+  color: var(--main-white);
+  border-color: var(--main-white);
+  background: #07aecc;
+}
+
+td {
+  width: 250px;
+  height: 45px;
+  padding: 10px 20px;
+  border-left: 1px solid var(--main-light-grey);
+  border-right: 1px solid var(--main-light-grey);
+  color: #4d4d4df1;
+}
+td {
+  background: var(--main-white);
+}

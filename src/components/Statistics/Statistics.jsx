@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import s from './Statistics.module.css'
 
 const color = item => {
   const colorArray = ['#E74C3C', '#8E44AD', '#3498DB', '#27AE60', '#F39C12'];
@@ -6,11 +7,11 @@ const color = item => {
 };
 
 const Statistics =({stats}) =>  (
-         <ul className="stat-list">
+         <ul className={s.statList}>
         {stats.map(stat =>
-           (<li className="item"  key={stat.id} style={{ backgroundColor: color(stat) }}>
-            <span className="label">{ stat.label}</span>
-            <span className="percentage">{ stat.percentage}%</span>
+           (<li className={s.item}  key={stat.id} style={{ backgroundColor: color(stat) }}>
+            <span className={s.label}>{ stat.label}</span>
+            <span className={s.percentage}>{ stat.percentage}%</span>
     </li>))}
   </ul>);
     

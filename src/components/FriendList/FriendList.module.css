@@ -13,7 +13,7 @@
   border-radius: 3px;
   box-shadow: 1px 2px 3px var(--main-shadow-color);
 }
-.avatar {
+.userAvatar {
   width: 100px;
   height: 100px;
   background-color: var(--main-light-grey);
@@ -21,12 +21,21 @@
 }
 .status {
   margin: 15px;
- width: 20px;
- height: 20px;
- border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
-.name {
+.userName {
   margin-left: 18px;
   font-size: 28px;
   font-weight: 500;
+}
+
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
 }
